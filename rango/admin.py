@@ -8,6 +8,6 @@ class CategoryAdmin(admin.ModelAdmin):
 # Update the registration to include this customised interface
 admin.site.register(Category, CategoryAdmin)
 # Register your models here.
-admin.site.register(Category)
+#admin.site.register(Category)
 admin.site.register(Page)
 
