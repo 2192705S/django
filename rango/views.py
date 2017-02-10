@@ -88,7 +88,7 @@ def about(request):
     if request.session.test_cookie_worked():
         print("TEST COOKIE WORKED!")
         request.session.delete_test_cookie()
-    return render(request, 'rango/index.html', {})
+    return render(request, 'rango/about.html')
 	
 def show_category(request, category_name_slug):
     # Create a context dictionary which we can pass # to the template rendering engine.
