@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^category/(?P<category_name_slug>[\w-]+)/$', views.show_category, name='show_category'),
 	url(r'^category/(?P<category_name_slug>[\w-]+)/add_page/$', views.add_page, name='add_page'),
     url(r'^$', views.index, name='index'),
+	url(r'^register/$', views.register, name='register'), # New pattern!
     # above maps any URLs starting 
     # with rango/ to be handled by
     # the rango application
