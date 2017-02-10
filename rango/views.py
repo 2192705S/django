@@ -69,7 +69,7 @@ def index(request):
     request.session.set_test_cookie()
     category_list = Category.objects.order_by('-likes')[:5]
     context_dict = {'categories': category_list}
-	context_dict['visits'] = request.session['visits']
+    context_dict['visits'] = request.session['visits']
 
 	# Obtain our Response object early so we can add cookie information.
     response = render(request, 'rango/index.html', context_dict)
